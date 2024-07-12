@@ -208,7 +208,7 @@ function bgrotaion() {
     let t2 = gsap.timeline({
         scrollTrigger: {
             trigger: '.page3',
-            start: '5% 50%',
+            start: '2% 50%',
             end: '65% 50%',
             scrub: true,
             // markers: true
