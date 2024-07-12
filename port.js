@@ -211,7 +211,7 @@ function bgrotaion() {
             start: '5% 50%',
             end: '65% 50%',
             scrub: true,
-            markers: true
+            // markers: true
 
         }
     });
