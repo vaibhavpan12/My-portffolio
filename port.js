@@ -208,10 +208,10 @@ function bgrotaion() {
     let t2 = gsap.timeline({
         scrollTrigger: {
             trigger: '.page3',
-            start: '0% 50%',
-            end: '50% 50%',
+            start: '5% 50%',
+            end: '65% 50%',
             scrub: true,
-            // markers: true
+            markers: true
 
         }
     });
@@ -219,33 +219,37 @@ function bgrotaion() {
 
         rotate: 360
 
-    })
+    }, 0)
     t2.from(".page3 h1", {
         y: 50,
         opacity: 0,
 
-    })
-    t2.from(".starbucksimage", {
+    }, 0)
+    t2.from(".starbuks", {
         y: 50,
         opacity: 0,
 
     })
-    t2.from(".swtimage", {
+
+    t2.from(".swt", {
         y: 50,
         opacity: 0,
 
     })
-    t2.from(".flaashnetimage", {
+
+    t2.from(".flaashnet", {
         y: 50,
         opacity: 0,
 
     })
-    t2.from(".geminiimage", {
+
+    t2.from(".gemini", {
         y: 50,
         opacity: 0,
 
     })
-    t2.from(".shoppersimage", {
+
+    t2.from(".shopper", {
         y: 50,
         opacity: 0,
 
