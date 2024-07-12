@@ -321,6 +321,21 @@ html.lenis body {
   align-items: center;
   flex-wrap: wrap;
   z-index: 1;
+  /* background-color: #9594ff; */
+}
+.starbuks{
+  padding: 50px;
+}
+.swt{
+  padding: 50px;
+  /* background-color: #9594ff; */
+}.flaashnet{
+  padding: 50px;
+}.gemini{
+  padding: 50px;
+}
+.shopper{
+  padding: 50px;
 }
 .starbuks a {
   width: 20%;
