@@ -225,30 +225,30 @@ function bgrotaion() {
         opacity: 0,
 
     }, 0)
-    t2.from(".starbuks", {
+   
+       t2.from(".flaashnet", {
         y: 50,
         opacity: 0,
 
     })
-
     t2.from(".swt", {
         y: 50,
         opacity: 0,
 
     })
 
-    t2.from(".flaashnet", {
-        y: 50,
-        opacity: 0,
-
-    })
+ 
 
     t2.from(".gemini", {
         y: 50,
         opacity: 0,
 
     })
+     t2.from(".starbuks", {
+        y: 50,
+        opacity: 0,
 
+    })
     t2.from(".shopper", {
         y: 50,
         opacity: 0,
