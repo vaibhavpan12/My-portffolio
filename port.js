@@ -297,3 +297,34 @@ function bgrotaion() {
 }
 bgrotaion()
 
+function emailSend(){
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+      
+        const email = document.getElementById('email').value.trim(); // Trim whitespace
+        const message = document.getElementById('message').value;
+      
+        if (email.toLowerCase().endsWith('.com')) {
+      
+          emailjs.send("service_frawroo", "template_rr5ed5j", {
+            to_email: email,
+            message_html: message
+          }).then(function(response) {
+            console.log('Email sent:', response);
+            alert('Your message has been sent successfully!');
+      
+            document.getElementById('email').value = '';
+            document.getElementById('message').value = '';
+          }, function(error) {
+            console.error('Email send failed:', error);
+            alert('There was an issue sending your message. Please try again later.');
+          });
+        } else {
+          alert('Please enter a valid email address ending with ".com".');
+          document.getElementById('email').focus();
+        }
+      });
+}
+emailSend()
+
+
