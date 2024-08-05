@@ -9,12 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Inter:wght@100..900&family=Roboto+Serif:ital,opsz,wdth,wght@0,8..144,150,100..900;1,8..144,150,100..900&family=Signika:wght@300..700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -29,11 +27,11 @@
         <div class="navbar">
           <div class="leftnav">
             <img class="logo" src="namelofgo.png" alt="" />
-            <p class="logoname">
+            <!-- <p class="logoname">
               Vaibhav<br />
               Ashok<br />
               Panchal
-            </p>
+            </p> -->
           </div>
           <div class="rightnav">
             <div class="menubar">
@@ -47,7 +45,10 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="tel:7558578967">+91 7558578967</a></li>
                 <li>
-                  <a id="resume" href="vaibhav Resume (1).pdf" download="vaibhav Resume"
+                  <a
+                    id="resume"
+                    href="vaibhav Resume (1).pdf"
+                    download="vaibhav Resume"
                     ><button class="Download-button">
                       <svg
                         viewBox="0 0 640 512"
@@ -56,7 +57,6 @@
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          fill="white"
                           d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z"
                         ></path>
                       </svg>
@@ -194,7 +194,7 @@
               /></a>
             </div>
             <div class="contact-form">
-              <form action="/submit" method="post">
+              <form id="contactForm">
                 <div class="form-group">
                   <label for="email"></label>
                   <input
@@ -246,6 +246,19 @@
         </div>
       </div>
     </div>
+    <!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function(){
+         emailjs.init({
+           publicKey: "xyF3LHBwCIS8u00GL",
+         });
+      })();
+   </script>
+   
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
       integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
@@ -260,7 +273,5 @@
     ></script>
     <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script>
     <script src="port.js"></script>
-    <script src="three.r134.min.js"></script>
-    <script src="vanta.net.min.js"></script>
   </body>
 </html>
