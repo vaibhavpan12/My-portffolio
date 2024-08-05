@@ -57,9 +57,10 @@ html.lenis body {
   z-index: -1;
 }
 #circle {
-  width: 150px;
-  height: 150px;
-  background-color: rgb(138, 211, 213);
+  width: 50px;
+  height: 50px;
+  /* background-color: rgb(138, 211, 213); */
+  border: 1px solid white;
   border-radius: 100%;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -67,7 +68,6 @@ html.lenis body {
   transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   z-index: 0;
   scale: 0;
-  filter: blur(10px);
 }
 .homede {
   width: 100vw;
@@ -100,11 +100,11 @@ html.lenis body {
 }
 .name h1 {
   position: absolute;
-  font-size: 9vw;
+  font-size: 7vw;
   color: white;
   z-index: 0;
   top: 250px;
-  font-family: inter;
+  font-family: "Roboto Serif", serif;
   font-weight: 700;
   text-align: center;
 }
@@ -121,8 +121,6 @@ html.lenis body {
   width: 100%;
   height: 10vh;
   display: flex;
-  /* position: fixed; */
-  /* z-index: 999; */
 }
 .menubar {
   display: none;
@@ -197,8 +195,8 @@ html.lenis body {
   color: rgba(255, 255, 255, 0.486);
   text-decoration: none;
   font-family: "Andika", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   text-transform: uppercase;
   transition: 0.5s;
 }
@@ -283,7 +281,7 @@ html.lenis body {
   font-size: 1.5vw;
   border: 1px solid #fff;
   border-radius: 50px;
-  font-weight: 400;
+  font-weight: 500;
   filter: blur(10px);
   opacity: 0;
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
@@ -656,6 +654,20 @@ html.lenis body {
     width: 35px;
     padding: 0 20px;
   }
+  .skills {
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 2vh;
+    padding: 0vw 5vw;
+  }
+  .skilltext {
+    width: 100vw;
+    height: 10vh;
+    color: white;
+    text-align: center;
+    top: 150px;
+    position: absolute;
+  }
   .menunav {
     width: 50vw;
     height: 100vh;
@@ -742,16 +754,346 @@ html.lenis body {
     right: 50px;
     font-family: "Andika", sans-serif;
   }
+  .mybg {
+    display: none;
+  }
+  .page3 h1 {
+    font-size: 35px;
+  }
+  .prosimage {
+    width: 350px;
+    padding: 70px 50px;
+  }
   .main-section h2 {
     padding: 1vw 2vw;
-    font-size: 5vw;
+    font-size: 4vw;
     border: 1px solid #fff;
     border-radius: 50px;
-    font-weight: 400;
+    font-weight: 500;
     filter: blur(10px);
     opacity: 0;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
   }
+  .mail h1 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .page4 {
+    width: 100%;
+    height: auto;
+    /* background-color: rgb(0, 0, 0); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+  }
+  #contact {
+    margin-top: 100px;
+  }
+  .contact-form {
+    margin-top: 50px;
+    /* padding: 0px; */
+    max-width: 300px;
+  }
+  .form-group input,
+  .form-group textarea {
+    font-size: 20px;
+  }
+  .form-group button {
+    font-size: 20px;
+  }
+  .confoo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .confoo a {
+    font-size: 15px;
+    color: gray;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  #navcon {
+    width: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* padding: 10px 50px; */
+  }
+  #navcon a {
+    text-align: center;
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .navi a {
+    color: rgba(255, 255, 255, 0.651);
+    font-size: 15px;
+    text-decoration: none;
+    padding: 0px 5px;
+    font-family: inter;
+  }
+  .navi a img {
+    width: 10px;
+  }
+  .but {
+    padding: 30px 10px;
+  }
+  .but a {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 15px 35px;
+    border-radius: 100px;
+    font-family: inter;
+    border: 1px solid white;
+    transition: 0.5s;
+  }
+}
+
+/*  */
+.Download-button {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 8px 15px;
+  color: rgb(255, 255, 255);
+  /* background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb); */
+  background-color: transparent;
+  border: none;
+  border: 1px solid white;
+  box-shadow: 0 0.7em 1.5em -0.5em rgba(59, 48, 78, 0.527);
+  letter-spacing: 0.05em;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
+  transition: 0.5s;
+}
+
+.Download-button svg {
+  margin-right: 8px;
+  width: 25px;
+  transition: 1s;
+  fill: rgb(255, 255, 255);
+}
+.Download-button:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #3b82f6;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: white;
+  color: black;
+}
+.Download-button:hover svg {
+  fill: #000;
+}
+.Download-button:active {
+  box-shadow: 0 0.3em 1em -0.5em #3b82f6;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+
+.Download-button::before {
+  content: "";
+  width: 4px;
+  height: 40%;
+  background-color: white;
+  position: absolute;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  left: 0;
+  transition: all 0.2s;
+}
+
+.Download-button::after {
+  content: "";
+  width: 4px;
+  height: 40%;
+  background-color: white;
+  position: absolute;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  right: 0;
+  transition: all 0.2s;
+}
+
+.Download-button:hover::before,
+.Download-button:hover::after {
+  height: 60%;
+}
+
+.Download-button:hover::before {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  transform: translate(5px, -15px) rotate(45deg);
+}
+
+.Download-button:hover::after {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  transform: translate(-5px, 15px) rotate(45deg);
+}
+
+@media (max-width: 1500px) {
+  .bg {
+    transition: 0.5s;
+    filter: blur(1px);
+    rotate: 90deg;
+    background-repeat: no-repeat;
+  }
+  .bg img {
+    width: 800px;
+  }
+
+  .logo {
+    width: 60px;
+    padding-left: 5px;
+    z-index: 99;
+  }
+  .leftnav p {
+    display: none;
+  }
+  .page1 {
+    width: 100%;
+    height: 75vh;
+    overflow: visible;
+    position: relative;
+    background-color: transparent;
+  }
+  .menubar {
+    display: flex;
+    position: absolute;
+    width: 35vw;
+  }
+  #circle {
+    display: none;
+  }
+  .wrong {
+    display: flex;
+  }
+  .rightnav .menubar {
+    display: flex;
+    justify-content: right;
+    padding: 20px 70px;
+  }
+  .menubar img {
+    width: 35px;
+    padding: 0 20px;
+  }
+  .skills {
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 2vh;
+    padding: 0vw 5vw;
+    font-size: 0vw;
+  }
+  .main-section h2 {
+    padding: 1vw 2vw;
+    font-size: 1.8vw;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    font-weight: 500;
+    filter: blur(10px);
+    opacity: 0;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  }
+  .menunav {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    background-color: #242424;
+    position: fixed;
+    transform: translateX(100%);
+    z-index: 9999;
+    transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  .menunav ul {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    list-style: none;
+    z-index: 9999;
+  }
+  .menunav ul li {
+    padding: 20px 0;
+  }
+  .menunav ul li a {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .imagbg {
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgba(255, 255, 255, 0.274);
+    border-radius: 100%;
+    position: absolute;
+    top: 25px;
+    left: 150px;
+    z-index: 1;
+    scale: 0;
+  }
+  .starbuks a {
+    width: 25%;
+    transform: translateX(150px);
+    padding: 10px 10px;
+  }
+  .swt a {
+    width: 25%;
+    transform: translateX(150px);
+    padding: 10px 10px;
+  }
+  .flaashnet a {
+    width: 25%;
+    transform: translateX(150px);
+    padding: 10px 10px;
+  }
+  .gemini a {
+    width: 25%;
+    transform: translateX(150px);
+    padding: 10px 10px;
+  }
+  .shopper a {
+    width: 25%;
+    transform: translateX(150px);
+    padding: 10px 10px;
+  }
+  .name h1 {
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    z-index: 0;
+    top: 200px;
+    font-family: inter;
+    font-weight: 700;
+    letter-spacing: 10px;
+    padding: 5px;
+  }
+  .name h2 {
+    /* background-color: #00ddeb; */
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    z-index: 0;
+    top: 450px;
+    right: 50px;
+    font-family: "Andika", sans-serif;
+  }
+
   .mybg {
     display: none;
   }
@@ -841,83 +1183,4 @@ html.lenis body {
     border: 1px solid white;
     transition: 0.5s;
   }
-}
-
-/*  */
-.Download-button {
-  display: flex;
-  align-items: center;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 17px;
-  padding: 12px 20px;
-  color: white;
-  background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
-  border: none;
-  box-shadow: 0 0.7em 1.5em -0.5em rgba(59, 48, 78, 0.527);
-  letter-spacing: 0.05em;
-  border-radius: 8px;
-  cursor: pointer;
-  position: relative;
-  transition: all 0.2s;
-}
-
-.Download-button svg {
-  margin-right: 8px;
-  width: 25px;
-}
-
-.Download-button:hover {
-  box-shadow: 0 0.5em 1.5em -0.5em #3b82f6;
-  border-top-left-radius: 40px;
-  border-bottom-right-radius: 40px;
-}
-
-.Download-button:active {
-  box-shadow: 0 0.3em 1em -0.5em #3b82f6;
-}
-
-.Download-button::before {
-  content: "";
-  width: 4px;
-  height: 40%;
-  background-color: white;
-  position: absolute;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  left: 0;
-  transition: all 0.2s;
-}
-
-.Download-button::after {
-  content: "";
-  width: 4px;
-  height: 40%;
-  background-color: white;
-  position: absolute;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  right: 0;
-  transition: all 0.2s;
-}
-
-.Download-button:hover::before,
-.Download-button:hover::after {
-  height: 60%;
-}
-
-.Download-button:hover::before {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  transform: translate(5px, -15px) rotate(45deg);
-}
-
-.Download-button:hover::after {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  transform: translate(-5px, 15px) rotate(45deg);
 }
